@@ -17,9 +17,11 @@ This is a simple weather dashboard application that allows users to check the cu
 
 3. **View Weather Details**: After selecting a location, the app displays the current weather details including temperature, weather condition, humidity, wind speed, and precipitation.
 
-4. **Toggle Themes**: The app offers two themes - warm and cold. The theme is automatically set based on the temperature of the selected location. Users can also manually toggle between themes using the menu.
+4. **Toggle Themes**: The app offers two themes - warm and cold. The theme is automatically set based on the temperature of the selected location.
 
-5. **Navigate**: Users can navigate between the main dashboard and the location selection/search screen using the navigation arrows.
+5. **Navigate**: Users can navigate between the main dashboard and the location selection/search screen using the navigation arrows which are only prompted on small enough screens.
+
+6. **Usability**: Users who enter there API key will have it saved to local storage which will allow the user a once off entering of their API key, this is to ensure the user has the best usage of the weather app
 
 ## Instructions for Developers
 
