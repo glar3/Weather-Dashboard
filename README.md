@@ -1,6 +1,6 @@
 # Weather Dashboard App
 
-This is a simple weather dashboard application that allows users to check the current weather conditions for various locations. The app retrieves weather data from the WeatherAPI and displays it in a user-friendly interface.
+This is a simple weather dashboard application that allows users to check the current weather conditions for any location. The app retrieves weather data from the WeatherAPI and displays it in a user-friendly interface.
 
 ## Features
 
