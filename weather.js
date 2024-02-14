@@ -168,7 +168,7 @@ search.addEventListener("click", async function () {
 });
 
 async function getTemperature() {
-  const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
   const response = await fetch(url);
   const weather = await response.json();
   console.log(weather);
@@ -204,7 +204,6 @@ async function getTime() {
   let currentTime = new Date();
   let hours = currentTime.getHours().toString().padStart(2, "0");
   let minutes = currentTime.getMinutes().toString().padStart(2, "0");
-  // let seconds = currentTime.getSeconds().toString().padStart(2, "0");
   let weekday = weekdays[currentTime.getDay()];
   let day = currentTime.getDate();
   let month = months[currentTime.getMonth()];
