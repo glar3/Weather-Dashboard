@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/00e99bb18d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <div class="left" id="left">
+      <section class="nav">
+        <section class="secret">
+          <h2 id="secret">Weather Dashboard</h2>
+          <section class="api">
+            <input
+              type="text"
+              id="secretApiText"
+              placeholder="Enter your API Key here"
+            />
+            <button id="confirmSecret">Use Api Key</button>
+          </section>
+        </section>
+        <section class="menu">
+          <i class="fa-solid fa-bars" id="menu"></i>
+        </section>
+      </section>
+      <section class="location">
+        <span id="weatherCountry"></span>
+        <span id="weatherCity"></span>
+        <span id="cityTime"></span>
+      </section>
+
+      <section class="bottom">
+        <span id="weatherTemperature"></span>
+        <section class="weather">
+          <img src="" alt="" id="weatherImage" />
+          <span id="weatherType"></span>
+        </section>
+      </section>
+    </div>
+
+    <div class="right" id="right">
+      <section class="escape">
+        <i class="fa-solid fa-arrow-left" id="goBack"></i>
+      </section>
+      <section class="addLocation">
+        <input
+          id="addLocationInput"
+          type="text"
+          placeholder="Search a location"
+        />
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+      </section>
+      <span class="line"></span>
+
+      <ul class="userLocations">
+        <li><span id="durban">Durban</span></li>
+        <li><span id="mosselBay">Mossel Bay</span></li>
+        <li><span id="london">London</span></li>
+        <li><span id="hillcrest">Hillcrest</span></li>
+      </ul>
+      <span class="line"></span>
+      <section class="weatherDetails">
+        <span class="detailsTitle">Weather Details</span>
+        <ul class="details">
+          <li><span>Cloudy</span><span id="cloudy"></span></li>
+          <li><span>Humidity</span><span id="humidity"></span></li>
+          <li><span>Wind</span><span id="wind"></span></li>
+          <li><span>Rain</span><span id="rain"></span></li>
+        </ul>
+      </section>
+      <span class="line"></span>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

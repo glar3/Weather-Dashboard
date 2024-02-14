@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --leftText: #462224;
+  --leftBackground-rightText: #9f8f80;
+  --rightBackground: #3a312c;
+
+  /* --leftText: #132e35;
+  --leftBackground-rightText: #afb3b7;
+  --rightBackground: #69818d; */
+}
+
+html * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: var(--leftText);
+  background: var(--leftBackground-rightText);
+  font-family: Poppins, "Segoe UI", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#secret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  padding: 50px;
+
+  z-index: 999;
+  box-shadow: 0 0 100px 1px rgb(11, 11, 11);
+}
+
+.left * {
+  user-select: none;
+}
+
+.left .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left .nav i {
+  display: none;
+}
+
+.left .nav .secret {
+  display: flex;
+  gap: 20px;
+}
+
+.left .nav .secret #secret {
+  padding: 10px;
+}
+
+.left .nav .secret .api {
+  display: flex;
+  gap: 20px;
+}
+
+.left .nav .secret #secretApiText {
+  border-bottom: 1px solid var(--leftText);
+  outline: none;
+  display: none;
+}
+
+.left .nav .secret #secretApiText::placeholder {
+  color: var(--leftText);
+}
+
+.left .nav .secret #confirmSecret {
+  background: var(--leftText);
+  color: var(--leftBackground-rightText);
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.left .nav .secret #secretApiText,
+.left .nav .secret #confirmSecret {
+  padding: 10px;
+}
+
+.left .location {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.left .location #weatherCountry {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left .location #weatherCity {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.left .location #cityTime {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left .bottom #weatherTemperature {
+  font-size: 100px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.left .bottom .weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left .bottom .weather #weatherImage {
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.left .bottom .weather #weatherType {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  padding: 50px;
+
+  color: var(--leftBackground-rightText);
+  background: var(--rightBackground);
+
+  transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.right * {
+  user-select: none;
+  color: var(--leftBackground-rightText);
+  background: var(--rightBackground);
+  transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.right .line {
+  border-bottom: 1px solid var(--leftBackground-rightText);
+}
+
+.right .escape {
+  display: none;
+}
+
+.right .addLocation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .addLocation #addLocationInput {
+  font-size: 20px;
+  outline: none;
+  font-weight: 500;
+  width: 100%;
+}
+
+.right .addLocation #search {
+  cursor: pointer;
+}
+
+.right .addLocation #addLocationInput::placeholder {
+  color: var(--leftBackground-rightText);
+}
+
+.right .userLocations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.right .userLocations li span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.right .weatherDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.right .weatherDetails .detailsTitle {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+.right .weatherDetails .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.right .weatherDetails .details li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right .weatherDetails .details #cloudy,
+.right .weatherDetails .details #humidity,
+.right .weatherDetails .details #wind,
+.right .weatherDetails .details #rain {
+  font-weight: 600;
+}
+
+.right .weatherDetails .details li span {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .left {
+    width: 100%;
+    z-index: 1;
+    height: auto;
+    padding: 25px;
+  }
+
+  .left .nav i {
+    display: block;
+  }
+
+  .left .nav .secret {
+    display: block;
+    gap: 20px;
+  }
+
+  .left .nav .secret .api {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left .location #weatherCountry {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .left .location #weatherCity {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .left .location #cityTime {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .right {
+    display: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .right .escape {
+    display: block;
+    cursor: pointer;
+  }
+
+  .right .escape #goBack {
+    margin: 25px 25px 0 25px;
+    font-size: 25px;
+  }
+
+  .right .addLocation {
+    margin: 25px;
+  }
+
+  .right .userLocations {
+    margin: 25px;
+  }
+
+  .right .weatherDetails {
+    margin: 25px;
+  }
+
+  .right .line {
+    margin: 25px;
+  }
+
+  .right .weatherDetails .detailsTitle {
+    padding-bottom: 25px;
+  }
+
+  .right .weatherDetails .details li {
+    padding: 5px 0;
+  }
+}
