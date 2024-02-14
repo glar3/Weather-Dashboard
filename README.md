@@ -1,33 +1,33 @@
 # Weather Dashboard App
 
-This is a simple weather dashboard application that allows users to check the current weather conditions for any location. The app retrieves weather data from the WeatherAPI and displays it in a user-friendly interface.
+This is a straightforward weather dashboard application enabling users to effortlessly check current weather conditions for any desired location. The app seamlessly fetches weather data from WeatherAPI and presents it in a user-friendly interface.
 
 ## Features
 
-- **Current Weather Display**: The app shows the current temperature, weather condition, humidity, wind speed, and precipitation for the selected location.
-- **Location Selection**: Users can select predefined locations such as Durban, Mossel Bay, London, and Hillcrest or search for a custom location using the search feature.
-- **API Key Integration**: Users can input their WeatherAPI key to access the weather data.
-- **Responsive Design**: The dashboard is designed to be responsive, ensuring optimal viewing experience across different devices.
+- **Current Weather Display**: The app showcases the current temperature, weather condition, humidity, wind speed, and precipitation for the selected location.
+- **Location Selection**: Users have the option to choose from preset locations like Durban, Mossel Bay, London, and Hillcrest or search for a custom location via the search feature. Additionally, an upcoming feature will empower users to manage their predefined locations, including adding, deleting, and editing them as per their preferences.
+- **API Key Integration**: Users can conveniently input their WeatherAPI key to access weather data.
+- **Responsive Design**: The dashboard is designed to adapt responsively, ensuring an optimal viewing experience across various devices.
 
 ## Usage
 
-1. **Input API Key**: Upon opening the app, users should use the API key they legally obtained from the [WeatherAPI](https://www.weatherapi.com/) by entering it into the input field which will appear once the user clicks the text **"Weather Dashboard"**.
+1. **Input API Key**: Upon launching the app, users should enter their legally obtained API key from [WeatherAPI](https://www.weatherapi.com/) into the provided input field, which appears upon clicking on the text **"Weather Dashboard"**.
 
-2. **Select Location**: Users can either click on one of the predefined locations (Durban, Mossel Bay, London, Hillcrest) or use the search bar to enter a custom location.
+2. **Select Location**: Users can either click on one of the preset locations (Durban, Mossel Bay, London, Hillcrest) or utilize the search bar to specify a custom location.
 
-3. **View Weather Details**: After selecting a location, the app displays the current weather details including temperature, weather condition, humidity, wind speed, and precipitation.
+3. **View Weather Details**: Once a location is selected, the app promptly displays comprehensive weather details, encompassing temperature, weather condition, humidity, wind speed, and precipitation.
 
-4. **Toggle Themes**: The app offers two themes - warm and cold. The theme is automatically set based on the temperature of the selected location.
+4. **Toggle Themes**: The app offers two themes - warm and cold, automatically set based on the temperature of the selected location.
 
-5. **Navigate**: Users can navigate between the main dashboard and the location selection/search screen using the navigation arrows which are only prompted on small enough screens.
+5. **Navigate**: Users can seamlessly switch between the main dashboard and the location selection/search screen using the navigation arrows, which are exclusively prompted on smaller screens.
 
-6. **Usability**: Users who enter there API key will have it saved to local storage which will allow the user a once off entering of their API key, this is to ensure the user has the best usage of the weather app
+6. **Usability**: Users entering their API key will have it conveniently saved to local storage, streamlining the usage of the weather app.
 
 ## Instructions for Developers
 
-- **API Integration**: Developers need to obtain a valid WeatherAPI key and input it into the `secretApiText` input field.
-- **Customization**: Developers can customize the app's appearance and functionality by modifying the HTML, CSS, and JavaScript files.
-- **Localization**: The app currently supports a few predefined locations. Developers can expand the list of locations by adding more options in the HTML file and handling the corresponding events in the JavaScript file.
+- **API Integration**: Developers are required to acquire a valid WeatherAPI key and integrate it into the `secretApiText` input field.
+- **Customization**: Developers have the flexibility to personalize the app's appearance and functionality by modifying the HTML, CSS, and JavaScript files.
+- **Localization**: While the app presently supports a selection of predefined locations, developers can expand this list by adding additional options in the HTML file and handling the corresponding events in the JavaScript file.
 
 ## Credits
 
